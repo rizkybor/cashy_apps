@@ -42,6 +42,7 @@ class MyApp extends StatelessWidget {
                     EdgeInsets.only(left: 45.0, top: 0, right: 0, bottom: 0),
                 padding:
                     EdgeInsets.only(left: 5.0, top: 30, right: 5.0, bottom: 20),
+                // padding: const EdgeInsets.fromLTRB(50, 120, 10, 10),
                 child: Column(children: <Widget>[
                   Image(
                     image: AssetImage('assets/images/cashy2.png'),
@@ -52,9 +53,11 @@ class MyApp extends StatelessWidget {
                     style: mainTitle,
                   ),
                   Text(
-                    "Aplikasi ini bersifat dummy, di rancang untuk mendukung kebutuhan Administrasi Organisasi",
+                    "Aplikasi ini bersifat dummy, \ndi rancang untuk mendukung kebutuhan Administrasi Organisasi",
                     style: mainBody,
+                    textAlign: TextAlign.center,
                   )
+                   //Container
                 ]))),
       ),
     );
