@@ -36,29 +36,38 @@ class MyApp extends StatelessWidget {
         ),
         body: SafeArea(
             child: Container(
-                width: 300,
-                // color: Colors.red,
+              // color: Colors.indigo,
                 margin:
-                    EdgeInsets.only(left: 45.0, top: 0, right: 0, bottom: 0),
-                padding:
-                    EdgeInsets.only(left: 5.0, top: 30, right: 5.0, bottom: 20),
-                // padding: const EdgeInsets.fromLTRB(50, 120, 10, 10),
-                child: Column(children: <Widget>[
-                  Image(
-                    image: AssetImage('assets/images/cashy2.png'),
-                    height: 200,
-                  ),
-                  Text(
-                    "Makopala Universitas Budi Luhur",
-                    style: mainTitle,
-                  ),
-                  Text(
-                    "Aplikasi ini bersifat dummy, \ndi rancang untuk mendukung kebutuhan Administrasi Organisasi",
-                    style: mainBody,
-                    textAlign: TextAlign.center,
-                  )
-                   //Container
-                ]))),
+                    EdgeInsets.only(left: 23.0, top: 0, right: 23.0, bottom: 0),
+                padding: 
+                    EdgeInsets.only(left: 0, top: 0, right: 0, bottom: 0),
+                // padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Image(
+                            image: AssetImage('assets/images/cashy2.png'),
+                            height: 150,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(left: 0.0, top: 2.0, right: 0.0, bottom: 20.0),
+                            child: Text(
+                              "MAKOPALA \n Universitas Budi Luhur",
+                              style: mainHeader,
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                          Text(
+                            "Mobile Apps ini bersifat dummy, \n di rancang untuk mendukung kebutuhan \n Administrasi Organisasi",
+                            style: mainBody,
+                            textAlign: TextAlign.center,
+                          )
+                        ],
+                      ) //Container
+                    ]))),
       ),
     );
   }

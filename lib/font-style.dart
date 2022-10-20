@@ -1,19 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:cashy_apps/customColors.dart';
 
 TextStyle mainHeader = TextStyle(
-  fontSize: 16,
-  color: Colors.black54,
+  fontSize: 18,
+  color: orangeMandarin,
   fontFamily: 'Poppins',
+  fontWeight: FontWeight.w700
 );
 
 TextStyle mainTitle = TextStyle(
-  fontSize: 16,
+  fontSize: 18,
   color: Colors.black54,
   fontFamily: 'Poppins',
+  fontWeight: FontWeight.w700
 );
 
 TextStyle mainBody = TextStyle(
-  fontSize: 12,
+  fontSize: 14,
   color: Colors.black54,
   fontFamily: 'Poppins',
+  fontWeight: FontWeight.w300
 );
